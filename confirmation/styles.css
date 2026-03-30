@@ -1,0 +1,78 @@
+/* styles.css - Custom styles for Tailwind-based layout */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cb0808;
+}
+
+/* Background image for English section (Dog and Cat) */
+.english-section {
+    position: relative; /* Ensure the container is positioned */
+    z-index: 1;
+}
+
+.english-section::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%; /* Full width for testing */
+    height: 100%; /* Full height for testing */
+    background-image: url('./background.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15; /* Adjust for testing */
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Keeps background behind the content */
+    /* background-color: rgba(255, 0, 0, 0.086); Temporary red overlay to confirm */
+    pointer-events: none;
+}
+
+/* Background image for Spanish section (Course) */
+.spanish-section {
+    position: relative;
+    z-index: 1;
+}
+
+.spanish-section::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-image: url('./backgroundTwo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    
+    pointer-events: none;
+}
+
+/* Customize hr for a more subtle divider line */
+hr {
+    border-color: #e5e7eb;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Extra padding for mobile screens */
+@media (max-width: 640px) {
+    .container {
+        padding: 1rem;
+    }
+}
+
+/* Hover effect for footer links */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Custom hover style for the "FREE DELIVERY" note */
+.delivery-note:hover {
+    color: #2f855a;
+}

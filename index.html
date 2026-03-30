@@ -1,0 +1,2665 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CareNow</title>
+    <meta name="author" content="Mediax">
+    <meta name="description" content="Mediax - Health & Medical HTML Template">
+    <meta name="keywords" content="Mediax - Health & Medical HTML Template">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        /* Terms Modal Custom Styles */
+        #termsModal .modal-dialog {
+            height: 50vh;
+            max-height: 50vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 3rem);
+        }
+        
+        #termsModal .modal-content {
+            height: 100%;
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin: auto;
+        }
+        
+        #termsModal .modal-header {
+            border-radius: 15px 15px 0 0;
+        }
+        
+        #termsModal .modal-footer {
+            border-radius: 0 0 15px 15px;
+        }
+        
+        #termsModal .btn:hover {
+            background: #2c3e50 !important;
+            transform: translateY(-1px);
+            transition: all 0.3s ease;
+        }
+        
+        /* Mobile optimized styles */
+        @media (max-width: 768px) {
+            #termsModal .modal-dialog {
+                z-index: 10;
+                max-width: 95% !important;
+                width: 95% !important;
+                height: 70vh !important;
+                max-height: 70vh !important;
+                margin: auto !important;
+                position: fixed !important;
+                top: 50% !important;
+                left: 50% !important;
+                transform: translate(-50%, -50%) !important;
+                display: block !important;
+            }
+            
+            #termsModal .modal-content {
+                height: 100% !important;
+                width: 100% !important;
+            }
+            
+            #termsModal .modal-body {
+                padding: 15px !important;
+                height: calc(100% - 100px) !important;
+            }
+            
+            #termsModal .modal-body > div {
+                padding: 15px !important;
+                height: 100% !important;
+            }
+        }
+        
+        /* Extra small mobile devices */
+        @media (max-width: 480px) {
+            #termsModal .modal-dialog {
+                max-width: 98% !important;
+                width: 98% !important;
+                height: 75vh !important;
+                max-height: 75vh !important;
+                margin: 1vh auto !important;
+            }
+        }
+        
+        /* SMS Consent Checkbox Spacing */
+        #myForm .form-check-label {
+            margin-left: 35px;
+        }
+    </style>
+
+    <style id="modern-aesthetics">
+        /* Modern Design System & Dark Mode Variables */
+        :root {
+            --primary-vibrant: #2ECC71;
+            --secondary-vibrant: #1E293B;
+            --bg-color: #ffffff;
+            --surface-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border-glow: rgba(46, 204, 113, 0.2);
+            --card-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --glass-bg: rgba(255, 255, 255, 0.8);
+            --glass-border: rgba(255, 255, 255, 0.5);
+            --nav-text: #21285a; /* Blue text in light theme */
+        }
+
+        [data-theme="dark"] {
+            --primary-vibrant: #34D399;
+            --secondary-vibrant: #F8FAFC;
+            --bg-color: #0F172A;
+            --surface-color: #1E293B;
+            --text-main: #F8FAFC;
+            --text-muted: #94A3B8;
+            --border-glow: rgba(52, 211, 153, 0.15);
+            --card-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
+            --glass-bg: rgba(30, 41, 59, 0.8);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --nav-text: #F8FAFC;
+            
+            /* Overriding existing template variables */
+            --theme-color: #34D399;
+            --theme-color2: #F8FAFC;
+            --title-color: #F8FAFC;
+            --body-color: #94A3B8;
+            --smoke-color: #1E293B;
+            --smoke-color2: #0F172A;
+            --white-color: #1E293B;
+            --black-color: #F8FAFC;
+            --th-border-color: #334155;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            transition: var(--transition-smooth);
+        }
+
+        /* Blue Menu Area Default Styling */
+        .menu-area {
+            background-color: #21285a !important; /* Your signature dark blue */
+            transition: var(--transition-smooth);
+        }
+
+        .main-menu ul li a {
+            color: #ffffff !important; /* White text on blue background */
+            font-weight: 600;
+        }
+
+        /* Adjustments for Sticky State */
+        .sticky-wrapper.is-sticky .menu-area {
+            background: rgba(33, 40, 90, 0.9) !important;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Ensure Logo background works with blue menu */
+        .header-logo .logo-bg {
+            background-color: #ffffff !important;
+        }
+
+        /* Dark Mode Menu overrides (if you want it different) */
+        [data-theme="dark"] .main-menu ul li a {
+            color: #ffffff !important;
+        }
+
+        .header-top, .header-top a, .header-top i, .header-top b {
+            color: var(--nav-text) !important;
+        }
+
+        html:not([data-theme="dark"]) .header-top, html:not([data-theme="dark"]) .menu-area {
+            background-color: transparent !important; /* Let the underlying blue/white show through */
+        }
+
+        /* Modern Gradient Buttons */
+        .th-btn {
+            background: linear-gradient(135deg, var(--primary-vibrant), #10b981) !important;
+            border: none !important;
+            box-shadow: 0 4px 15px var(--border-glow);
+            border-radius: 50px !important;
+            transition: var(--transition-smooth);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #ffffff !important;
+        }
+
+        .th-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px var(--border-glow);
+            filter: brightness(1.1);
+        }
+
+        /* Service Cards with Hover Animations */
+        .service-card, .testi-card, .feature-card, .assistance-card, .expert-card, .success-card, .impact-card {
+            background-color: var(--surface-color) !important;
+            border-radius: 24px !important;
+            border: 1px solid var(--glass-border) !important;
+            box-shadow: var(--card-shadow) !important;
+            transition: var(--transition-smooth) !important;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-card {
+            padding: 40px 30px;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, transparent, var(--border-glow));
+            opacity: 0;
+            z-index: -1;
+            transition: var(--transition-smooth);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px) !important;
+            border-color: var(--primary-vibrant) !important;
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+        
+        .box-icon {
+            background-color: var(--bg-color) !important;
+            border-radius: 50% !important;
+            padding: 20px;
+            box-shadow: 0 8px 24px var(--border-glow);
+            margin-bottom: 25px;
+            display: inline-block;
+            transition: var(--transition-smooth);
+        }
+        
+        .service-card:hover .box-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* Typography Enhancements */
+        h1, h2, h3, h4, h5, h6, .sec-title, .hero-title2 {
+            color: var(--text-main) !important;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-title2 .title1 {
+            background: linear-gradient(135deg, var(--text-main), var(--primary-vibrant));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        /* Dark Mode overrides for specific elements */
+        [data-theme="dark"] .bg-smoke {
+             background-color: var(--surface-color) !important;
+        }
+        [data-theme="dark"] .carousel-slide .hero-text {
+             color: var(--text-muted) !important;
+        }
+        [data-theme="dark"] .header-layout1 {
+            background: var(--bg-color);
+        }
+        [data-theme="dark"] .th-menu-area {
+            background-color: var(--surface-color);
+        }
+
+        /* Keep Hero section light in dark mode */
+        [data-theme="dark"] #hero .hero-title2, 
+        [data-theme="dark"] #hero .hero-title2 .title1,
+        [data-theme="dark"] #hero .hero-title2 span {
+            color: #1e293b !important;
+            -webkit-text-fill-color: initial !important;
+            background: none !important;
+        }
+
+        [data-theme="dark"] #hero .hero-text {
+            color: #1e293b !important;
+        }
+
+        [data-theme="dark"] .carousel-container {
+            background-color: #ffffff !important;
+        }
+
+        /* Keep header top light in dark mode */
+        [data-theme="dark"] .header-top {
+            background-color: #ffffff !important;
+            border-bottom: 2px solid #21285a !important;
+        }
+        
+        [data-theme="dark"] .header-top, 
+        [data-theme="dark"] .header-top a, 
+        [data-theme="dark"] .header-top i, 
+        [data-theme="dark"] .header-top b {
+            color: #21285a !important;
+        }
+
+        /* Dark mode input borders */
+        [data-theme="dark"] .form-control,
+        [data-theme="dark"] input,
+        [data-theme="dark"] textarea,
+        [data-theme="dark"] select {
+            border: 1px solid #475569 !important; /* Elegant light grey/slate */
+            background-color: #1e293b !important;
+            color: #f8fafc !important;
+        }
+
+        [data-theme="dark"] .form-control:focus,
+        [data-theme="dark"] input:focus,
+        [data-theme="dark"] textarea:focus,
+        [data-theme="dark"] select:focus {
+            border-color: var(--primary-vibrant) !important;
+            box-shadow: 0 0 0 2px var(--border-glow) !important;
+        }
+
+        /* Dark mode Work Process section */
+        [data-theme="dark"] #process .sec-title {
+            color: #21285a !important; /* Dark Blue heading */
+        }
+        [data-theme="dark"] #process .box-title {
+            color: #21285a !important; /* Dark Blue card title */
+        }
+        [data-theme="dark"] #process .box-text {
+            color: #5db847 !important; /* Green description text */
+        }
+        [data-theme="dark"] #process .sub-title {
+            color: #5db847 !important; /* Green sub-title */
+        }
+        [data-theme="dark"] #process .box-number {
+             color: #21285a !important; /* Dark Blue number */
+        }
+
+        /* Dark mode Service Tabs */
+        [data-theme="dark"] .choose-tab .nav-link {
+            color: #21285a !important; /* Non-active tabs become Dark Blue */
+            opacity: 0.8;
+            transition: var(--transition-smooth);
+        }
+
+        [data-theme="dark"] .choose-tab .nav-link.active {
+            color: #ffffff !important; /* Active tab stays white text */
+            opacity: 1;
+        }
+
+        [data-theme="dark"] .choose-tab .nav-link:hover:not(.active) {
+            opacity: 1;
+            color: var(--primary-vibrant) !important;
+        }
+
+        /* Theme Toggle Button */
+        .theme-toggle {
+            background: var(--surface-color);
+            border: 1px solid var(--glass-border);
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-main);
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            margin-right: 15px;
+            box-shadow: var(--card-shadow);
+            vertical-align: middle;
+        }
+
+        .theme-toggle:hover {
+            transform: rotate(15deg) scale(1.1);
+            color: var(--primary-vibrant);
+        }
+
+        /* Images and Carousel */
+        .imgCar img, .carousel-slide img, .img-box1 img {
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transition: var(--transition-smooth);
+        }
+
+        .imgCar:hover img {
+            transform: scale(1.02);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+        }
+
+        /* Premium Modals */
+        .modal-content {
+            background-color: var(--surface-color) !important;
+            border-radius: 24px !important;
+            border: 1px solid var(--glass-border) !important;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+            backdrop-filter: blur(20px);
+            color: var(--text-main) !important;
+        }
+        
+        .modal-header {
+            border-bottom-color: var(--glass-border) !important;
+            border-top-left-radius: 24px !important;
+            border-top-right-radius: 24px !important;
+        }
+        
+        .modal-body {
+            color: var(--text-muted);
+        }
+    </style>
+
+<!-- Add these just before closing body tag, after jQuery but before your main.js -->
+
+
+</head>
+
+<body>
+    <!-- Mobile Menu -->
+    <div class="th-menu-wrapper">
+        <div class="th-menu-area text-center">
+            <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="#home"><img src="assets/img/finallogo.svg" alt="Mediax"></a>
+            </div>
+            <div class="th-mobile-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Area -->
+    <header class="th-header header-layout1" id="home">
+        <div class="header-top">
+            <div class="container">
+                <div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
+                    <div class="col-auto d-none d-lg-block">
+                        <div class="header-links">
+                            <ul>
+                                <li class="d-none d-sm-inline-block"><i class="fas fa-phone icon-btn"></i><b>Phone:</b> <a href="tel:+13864560055">+1 (386) 456-0055</a></li>
+                                <li class="d-none d-sm-inline-block"><i class="fas fa-envelope icon-btn"></i><b>Email:</b> <a href="mailto:Carenowpharmacy@gmail.com">Carenowpharmacy@gmail.com</a></li>
+                                <li class="d-none d-sm-inline-block"><i class="fas fa-location-dot icon-btn"></i><a href="https://www.google.com/maps/dir//1039+Harley+Strickland+Blvd+STE+600,+Orange+City,+FL+32763"> 1039 Harley Strickland Blvd STE 600, Orange City, FL 32763</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="sticky-wrapper">
+            <div class="menu-area">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <div class="header-logo">
+                                <div class="logo-bg" data-bg-src="assets/img/bg/testBg.png"></div>
+                                <a href="#home"><img src="assets/img/final_logo.svg" alt="Mediax"></a>
+                            </div>
+                        </div>
+                        <div class="col-auto d-none d-lg-inline-block">
+                            <nav class="main-menu d-none d-lg-inline-block">
+                                <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#services">Service</a></li>
+                                    <li><a href="#about">About Us</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-auto">
+                            <div class="header-button">
+                                <button id="themeToggleBtn" class="theme-toggle" aria-label="Toggle Dark Mode">
+                                    <i class="fas fa-moon"></i>
+                                </button>
+                                <a href="#contact" class="th-btn">Contact Us</a>
+                                <button type="button" class="th-menu-toggle d-block d-lg-none"><i class="far fa-bars"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <!-- Slide 1 -->
+            <div class="carousel-slide active">
+                <div class="th-hero-wrapper hero-2" id="hero">
+                    <div class="hero-inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 order-xl-1 order-lg-1 order-mg-2 order-mg-2 order-2">
+                                    <div class="hero-style2">
+                                        <h1 class="hero-title2">
+                                            <span class="title1">Complete Care<br>Under<span class="line-text"></span></span>
+                                            <span class="title2">One roof</span>
+                                        </h1>
+                                        <p class="hero-text" style="color: black;">Complete pharmaceutical care for every family
+                                            member - humans and pets alike. One trusted destination for all your healthcare
+                                            needs.</p>
+                                        <div class="btn-group justify-content-center">
+                                            <a href="#services" class="th-btn">Discover More</a>
+                                            <!-- <a href="#services" class="th-btn style4">See All Services</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 imgCar d-flex justify-content-center align-items-center order-xl-2 order-lg-2 order-mg-1 order-mg-1 order-1">
+                                    <div class="img-border-radious">
+                                        <div>
+                                            <img src="assets/img/hero/hero_bg_2_1.jpg" alt="Hero">
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+                <div class="th-hero-wrapper hero-2"  id="hero" >
+                    <div class="hero-inner" >
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 order-xl-1 order-lg-1 order-mg-2 order-mg-2 order-2">
+                                    <div class="hero-style2">
+                                        <h1 class="hero-title2">
+                                            <span class="title1">Expert<br><span class="line-text">Familycare</span></span>
+                                            <span class="title2">Endless love</span>
+                                        </h1>
+                                        <p class="hero-text" style="color: black;">Professional pharmaceutical services and
+                                            personalized healthcare solutions for your entire family. Your wellness journey
+                                            starts here.</p>
+                                        <div class="btn-group justify-content-center">
+                                            <a href="#services" class="th-btn">Discover More</a>
+                                            <!-- <a href="#services" class="th-btn style4">See All Services</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 imgCar d-flex justify-content-center align-items-center order-xl-2 order-lg-2 order-mg-1 order-mg-1 order-1">
+                                    <div class="img-border-radious">
+                                        <div>
+                                            <img src="assets/img/hero/hero_bg_2_2.jpg" alt="Hero">
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+                <div class="th-hero-wrapper hero-2" id="hero" >
+                    <div class="hero-inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 order-xl-1 order-lg-1 order-mg-2 order-mg-2 order-2">
+                                    <div class="hero-style2">
+                                        <h1 class="hero-title2">
+                                            <span class="title1">Prioritise<br><span class="line-text">Petcare</span></span>
+                                            <span class="title2">with us</span>
+                                        </h1>
+                                        <p class="hero-text" style="color: black;">Expert pharmaceutical care and personalized
+                                            solutions for your beloved pets. We're here to keep your furry family members
+                                            healthy and happy.</p>
+                                        <div class="btn-group justify-content-center">
+                                            <a href="#services" class="th-btn">Discover More</a>
+                                            <!-- <a href="#services" class="th-btn style4">See All Services</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 imgCar d-flex justify-content-center align-items-center order-xl-2 order-lg-2 order-mg-1 order-mg-1 order-1">
+                                    <div class="img-border-radious">
+                                        <div>
+                                            <img src="assets/img/hero/hero_bg_2_1.jpg" alt="Hero">
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Navigation Buttons -->
+        <button class="carousel-btn prev">←</button>
+        <button class="carousel-btn next">→</button>
+    
+        <!-- Navigation Dots -->
+        <div class="carousel-nav">
+            <button class="carousel-dot active"></button>
+            <button class="carousel-dot"></button>
+            <button class="carousel-dot"></button>
+        </div>
+    </div>
+
+<!-- Services Section -->
+<section class="why-sec2 section-margin" id="services">
+    <div class="container py-5">
+        <h1 class="text-center mb-5" style="color: #21285a;">Services For Human And Animal Care</h1>
+        
+        <div class="text-center choose-tab">
+            <ul class="nav nav-pills mb-5" id="serviceTabs" role="tablist">
+                <li class="nav-item">
+                    <button class="nav-link tab-btn active" role="presentation" data-bs-toggle="pill" data-bs-target="#all" type="button">
+                        All Services
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link tab-btn" data-bs-toggle="pill" data-bs-target="#family" type="button">
+                        Family services
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link tab-btn" data-bs-toggle="pill" data-bs-target="#pet" type="button">
+                       Pet Services
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="serviceTabsContent">
+            <div class="tab-pane fade show active" id="all" role="tabpanel">
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="service-card" data-bg-src="">
+                            <div class="box-shape">
+                                <img src="assets/img/bg/service_card_bg.png" alt="Service">
+                            </div>
+                            <div class="box-icon">
+                                <img src="assets/img/icon/medication_adherence.svg" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="#">Adherence<br>Packaging</a></h3>
+                            <button type="button" class="btn th-btn mt-2 btn-sm style2 theme-color" data-bs-toggle="modal" data-bs-target="#adherenceModal" data-bs-whatever="@getbootstrap">
+                                View Details
+                            </button>
+                        </div>
+                    
+                        <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Adherence Packaging</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                       
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- Button trigger modal -->
+                        
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="service-card" data-bg-src="">
+                            <div class="box-shape">
+                                <img src="assets/img/bg/service_card_bg.png" alt="Service">
+                            </div>
+                            <div class="box-icon">
+                                <img src="assets/img/icon/free_delivery.svg" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="">Free Delivery<br>Service</a></h3>
+                            
+                            <button type="button" class="btn th-btn mt-2 btn-sm style2 theme-color" data-bs-toggle="modal" data-bs-target="#deliveryModal" data-bs-whatever="@getbootstrap">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="service-card" data-bg-src="">
+                            <div class="box-shape">
+                                <img src="assets/img/bg/service_card_bg.png" alt="Service">
+                            </div>
+                            <div class="box-icon">
+                                <img src="assets/img/icon/medication_therapy.svg" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="">Medication Therapy Management</a></h3>
+                            
+                            <button type="button" class="btn th-btn mt-2 btn-sm style2 theme-color" data-bs-toggle="modal" data-bs-target="#therapyModal" data-bs-whatever="@getbootstrap">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="service-card" data-bg-src="">
+                            <div class="box-shape">
+                                <img src="assets/img/bg/service_card_bg.png" alt="Service">
+                            </div>
+                            <div class="box-icon">
+                                <img src="assets/img/icon/assistant.svg" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="">Patient Assistance Programs</a></h3>
+                            <button type="button" class="btn th-btn mt-2 btn-sm style2 theme-color" data-bs-toggle="modal" data-bs-target="#assistanceModal" data-bs-whatever="@getbootstrap">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="service-card" data-bg-src="">
+                            <div class="box-shape">
+                                <img src="assets/img/bg/service_card_bg.png" alt="Service">
+                            </div>
+                            <div class="box-icon">
+                                <img src="assets/img/icon/pet_priscription.svg" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="">Pet<br>Prescriptions</a></h3>
+                            <button type="button" class="btn th-btn mt-2 btn-sm style2 theme-color" data-bs-toggle="modal" data-bs-target="#petModal" data-bs-whatever="@getbootstrap">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="service-card" data-bg-src="">
+                            <div class="box-shape">
+                                <img src="assets/img/bg/service_card_bg.png" alt="Service">
+                            </div>
+                            <div class="box-icon">
+                                <img src="assets/img/icon/pet_care.svg" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="">Specialized Equine Care & Prescriptions</a></h3>
+                            <button type="button" class="btn th-btn mt-2 btn-sm style2 theme-color" data-bs-toggle="modal" data-bs-target="#equineModal" data-bs-whatever="@getbootstrap">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="service-card" data-bg-src="">
+                            <div class="box-shape">
+                                <img src="assets/img/bg/service_card_bg.png" alt="Service">
+                            </div>
+                            <div class="box-icon">
+                                <img src="assets/img/icon/pet_medication.svg" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="">Pet<br>Supplements</a></h3>
+                            
+                            <button type="button" class="btn th-btn mt-2 btn-sm style2 theme-color" data-bs-toggle="modal" data-bs-target="#supplementsModal" data-bs-whatever="@getbootstrap">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-pane fade" id="family" role="tabpanel">
+                <!-- Family services content -->
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="service-card" data-bg-src="">
+                            <div class="box-shape">
+                                <img src="assets/img/bg/service_card_bg.png" alt="Service">
+                            </div>
+                            <div class="box-icon">
+                                <img src="assets/img/icon/medication_adherence.svg" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="#">Adherence<br>Packaging</a></h3>
+                            <button type="button" class="btn th-btn mt-2 btn-sm style2 theme-color" data-bs-toggle="modal" data-bs-target="#adherenceModal" data-bs-whatever="@getbootstrap">
+                                View Details
+                            </button>
+                        </div>
+                    
+                        <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Adherence Packaging</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                       
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- Button trigger modal -->
+                        
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="service-card" data-bg-src="">
+                            <div class="box-shape">
+                                <img src="assets/img/bg/service_card_bg.png" alt="Service">
+                            </div>
+                            <div class="box-icon">
+                                <img src="assets/img/icon/free_delivery.svg" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="">Free Delivery<br>Service</a></h3>
+                            
+                            <button type="button" class="btn th-btn mt-2 btn-sm style2 theme-color" data-bs-toggle="modal" data-bs-target="#deliveryModal" data-bs-whatever="@getbootstrap">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="service-card" data-bg-src="">
+                            <div class="box-shape">
+                                <img src="assets/img/bg/service_card_bg.png" alt="Service">
+                            </div>
+                            <div class="box-icon">
+                                <img src="assets/img/icon/medication_therapy.svg" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="">Medication Therapy Management</a></h3>
+                            
+                            <button type="button" class="btn th-btn mt-2 btn-sm style2 theme-color" data-bs-toggle="modal" data-bs-target="#therapyModal" data-bs-whatever="@getbootstrap">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="service-card" data-bg-src="">
+                            <div class="box-shape">
+                                <img src="assets/img/bg/service_card_bg.png" alt="Service">
+                            </div>
+                            <div class="box-icon">
+                                <img src="assets/img/icon/assistant.svg" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="">Patient Assistance Programs</a></h3>
+                            <button type="button" class="btn th-btn mt-2 btn-sm style2 theme-color" data-bs-toggle="modal" data-bs-target="#assistanceModal" data-bs-whatever="@getbootstrap">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="tab-pane fade" id="pet" role="tabpanel">
+                <!-- Pet services content -->
+                <div class="row gy-4 justify-content-center">
+                        
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="service-card" data-bg-src="">
+                            <div class="box-shape">
+                                <img src="assets/img/bg/service_card_bg.png" alt="Service">
+                            </div>
+                            <div class="box-icon">
+                                <img src="assets/img/icon/pet_priscription.svg" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="">Pet<br>Prescriptions</a></h3>
+                            <button type="button" class="btn th-btn mt-2 btn-sm style2 theme-color" data-bs-toggle="modal" data-bs-target="#petModal" data-bs-whatever="@getbootstrap">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="service-card" data-bg-src="">
+                            <div class="box-shape">
+                                <img src="assets/img/bg/service_card_bg.png" alt="Service">
+                            </div>
+                            <div class="box-icon">
+                                <img src="assets/img/icon/pet_care.svg" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="">Specialized Equine Care & Prescriptions</a></h3>
+                            <button type="button" class="btn th-btn mt-2 btn-sm style2 theme-color" data-bs-toggle="modal" data-bs-target="#equineModal" data-bs-whatever="@getbootstrap">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="service-card" data-bg-src="">
+                            <div class="box-shape">
+                                <img src="assets/img/bg/service_card_bg.png" alt="Service">
+                            </div>
+                            <div class="box-icon">
+                                <img src="assets/img/icon/pet_medication.svg" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="">Pet<br>Supplements</a></h3>
+                            
+                            <button type="button" class="btn th-btn mt-2 btn-sm style2 theme-color" data-bs-toggle="modal" data-bs-target="#supplementsModal" data-bs-whatever="@getbootstrap">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<div class="section-margin" id="about">
+        
+        <!-- <div class="shape-mockup jump" data-bottom="10%" data-right="3%"><img src="assets/img/shape/medicine_1.svg" alt="shape" style="height: 100px;"></div> -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 mb-30 mb-xl-0">
+                    <div class="img-box1 justify-content-center d-flex align-items-center">
+                        <div class="img1">
+                            <img src="assets/img/normal/about_1_3.jpg" alt="About">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="ps-xxl-4 ms-xl-2 text-center text-xl-start">
+                        <div class="title-area mb-32">
+                            <span class="sub-title"><img src="assets/img/theme-img/title_icon.svg" alt="shape">About Us Company</span>
+                            <h2 class="sec-title">Your Complete Family Pharmacy</h2>
+                            <div class="quote-container">
+                                <p class="quote-text">
+                                    CareNow Pharmacy, founded on the belief that quality healthcare should be accessible to all, serves both families and their pets. With expertise in human and veterinary pharmacy, our skilled team offers services like custom medication compounding and specialized equine care. Built on trust and compassion, we proudly serve our community, making us a unique destination for comprehensive healthcare.
+                                </p>
+                            </div>
+                            <!-- <p class="sec-text" style="text-indent: 40px;text-align: justify;">What sets us apart is our unique expertise in both human and veterinary pharmacy services. Our team of specialized pharmacists and technicians works collaboratively to provide integrated care solutions, from custom medication compounding to specialized equine care.</p> -->
+                            <!-- <p class="sec-text" style="text-indent: 40px;text-align: justify;">Today, we continue to build on our foundation of trust, expertise, and compassionate care, serving our community with pride and dedication. Our commitment to both human and animal health makes us a unique healthcare destination in our community</p> -->
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+   
+ <!-- Features Section -->
+ <div class="overflow-hidden section-margin" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-xl-start">
+                    <div class="pe-xxl-5 mb-40 mb-xl-0">
+                        <div class="title-area mb-32">
+                            <span class="sub-title"><img src="assets/img/theme-img/title_icon.svg" alt="shape">Why Choose Us</span>
+                            <h2 class="sec-title">We Are Always Open For Your Health Services</h2>
+                        </div>
+                        <div class="choose-feature-wrap">
+                            <div class="choose-feature">
+                                <div class="box-number">01</div>
+                                <div class="media-body">
+                                    <h3 class="box-title">Quality Care</h3>
+                                    <p class="box-text">Highest standards in both human and veterinary pharmaceutical care.</p>
+                                </div>
+                            </div>
+                            <div class="choose-feature">
+                                <div class="box-number">02</div>
+                                <div class="media-body">
+                                    <h3 class="box-title">Compassion</h3>
+                                    <p class="box-text">Understanding and empathy for all our patients, human and animal alike.</p>
+                                </div>
+                            </div>
+                            <div class="choose-feature">
+                                <div class="box-number">03</div>
+                                <div class="media-body">
+                                    <h3 class="box-title">Accessibility</h3>
+                                    <p class="box-text">Convenient services and support when you need them most.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 justify-content-center align-items-center d-flex">
+                    <div class="img-box3">
+                        <img src="assets/img/normal/why_1.jpg" alt="Why">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Counter Section -->
+
+
+    <!-- Contact Section -->
+    <div class="overflow-hidden section-margin" id="contact" >
+        <div class="container section-margin">
+            <div class="appointment-row section-margin">
+                <div class="schedule-box">
+                    <div class="shape"></div>
+                    <h3 class="box-title">Working Hours</h3>
+                    
+                    <p class="box-timing">Monday: <span>9am - 5pm</span></p>
+                    <p class="box-timing">Tuesday: <span>9am - 5pm</span></p>
+                    <p class="box-timing">Wednesday: <span>9am - 5pm</span></p>
+                    <p class="box-timing">Thursday: <span>9am - 5pm</span></p>
+                    <p class="box-timing">Friday: <span>9am - 5pm</span></p>
+                    <p class="box-timing">Saturday: <span>Closed</span></p>
+                    <p class="box-timing">Sunday: <span>Closed</span></p>
+                    
+                </div>
+                <div class="form-wrap">
+                    <div class="img-box4">
+                        <div class="img1">
+                            <img src="assets/img/normal/form_1_1.jpg" alt="Image">
+                        </div>
+                        <div class="img2">
+                            <img src="assets/img/normal/form_1_2.jpg" alt="Image">
+                        </div>
+                    </div>
+                    <form class="appointment-form" id="myForm" onsubmit="return handleSubmit(event)">
+                        <h4 class="form-title">Contact Us</h4>
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
+                            </div>
+                            <div class="form-group col-12">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email Address">
+                            </div>
+                            <div class="form-group col-12">
+                                <input type="tel" class="form-control" name="number" id="number" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group col-12">
+                                <input type="textarea" class="form-control" name="subject" id="subject" placeholder="subject" style="height: 100px;overflow: scroll;text-wrap:pretty;">
+                            </div>
+                            <div class="form-group col-6">
+                                <input type="text" class="date-pick form-control" name="date" id="date-pick" placeholder="Date">
+                            </div>
+                            <div class="form-group col-6">
+                                <input type="text" class="time-pick form-control" name="time" id="time-pick" placeholder="Time">
+                            </div>
+                            <input type="hidden" class="tform-control" name="issue" id="issue" value="Not Resolved">
+                            <div class="form-group col-12 mt-3">
+                                <div class="form-check">
+                                    <input class="form-check-input " type="checkbox" name="sms_consent" id="sms_consent" required>
+                                    <label class="form-check-label" for="sms_consent">
+                                        By checking this box, I consent to receive text messages related to appointment from CareNow Pharmacy. You can reply "STOP" at any time to opt out. Message and data rates may apply. Message frequency may vary, text HELP to +1 (407) 636 6115 for assistance. For more information, please refer to our <a href="#privacy-policy">privacy policy</a> and <a href="#sms-terms">SMS terms and conditions</a> on our website.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-btn col-12">
+                                <button class="th-btn btn-fw" type="submit">Send an email</button>
+                            </div>
+                        </div>
+                        <p class="form-messages mb-0 mt-3"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Process Section -->
+<section class="section-margin pt-5 pb-5" id="process" data-bg-src="assets/img/bg/process_bg_1.jpg">
+        <div class="container">
+            <div class="title-area text-center">
+                <span class="sub-title"><img src="assets/img/theme-img/title_icon.svg" alt="Icon">Work Process</span>
+                <h2 class="sec-title">Let's See How We Work Process</h2>
+            </div>
+            <div class="process-card-wrap">
+                <div class="process-card">
+                    <div class="box-img">
+                        <div class="img">
+                            <img src="assets/img/normal/process_card_1.svg" alt="icon">
+                        </div>
+                        <p class="box-number">01</p>
+                    </div>
+                    <h3 class="box-title">We receive</h3>
+                    <p class="box-text">Multiple ways to send us your Prescriptions.</p>
+                </div>
+                <div class="process-card">
+                    <div class="box-img">
+                        <div class="img">
+                            <img src="assets/img/normal/process_card_2.svg" alt="icon">
+                        </div>
+                        <p class="box-number">02</p>
+                    </div>
+                    <h3 class="box-title">We Process</h3>
+                    <p class="box-text">Expert care in prepating yout Medication.</p>
+                </div>
+                <div class="process-card">
+                    <div class="box-img">
+                        <div class="img">
+                            <img src="assets/img/normal/process_card_3.svg" alt="icon">
+                        </div>
+                        <p class="box-number">03</p>
+                    </div>
+                    <h3 class="box-title">We deliver</h3>
+                    <p class="box-text">Convenient delivery options for all.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+<!-- Testimonial Section -->
+    <section class="section-margin" id="testimonials">
+        <div class="container">
+            <div class="title-area text-center">
+                <span class="sub-title"><img src="assets/img/theme-img/title_icon.svg" alt="shape">Testimonials</span>
+                <h2 class="sec-title">What Our Present Says?</h2>
+            </div>
+            <div class="swiper th-slider" id="testiSlide1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"2"}}}'>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testi-card bg-smoke">
+                            <div class="box-review">
+                                <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+                            </div>
+                            <div class="box-quote">
+                                <img src="assets/img/icon/quote_1.svg" alt="Icon">
+                            </div>
+                            <p class="box-text">"In the short time I've been a customer here they have gone above and beyond to ensure that my needs are met quickly and efficiently. It's clear that they genuinely care about their customers, something that seems to be lost in the larger chains."</p>
+                            <div class="box-profile">
+                                <div class="box-img">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="box-title">Paige Grasso</h3>
+                                    <span class="box-desig">Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testi-card bg-smoke">
+                            <div class="box-review">
+                                <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+                            </div>
+                            <div class="box-quote">
+                                <img src="assets/img/icon/quote_1.svg" alt="Icon">
+                            </div>
+                            <p class="box-text">"Pharmacist is so helpful and knowledgeable.. vibes is also good. Whenever I called them they always response positive and I always got my medication on time ."</p>
+                            <div class="box-profile">
+                                <div class="box-img">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="box-title">Nishva Patel</h3>
+                                    <span class="box-desig">Local Guide</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testi-card bg-smoke">
+                            <div class="box-review">
+                                <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+                            </div>
+                            <div class="box-quote">
+                                <img src="assets/img/icon/quote_1.svg" alt="Icon">
+                            </div>
+                            <p class="box-text">"Great pharmacy and place to get vaccinated! I had no wait to get my vaccine and was able to schedule my second shot easily on a day and time that worked for me. Super clean place with a friendly and knowledgeable staff. I highly recommend!"</p>
+                            <div class="box-profile">
+                                <div class="box-img">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="box-title">Dina Najjar</h3>
+                                    <span class="box-desig">Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="slider-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    
+<!-- Footer -->
+<footer class="footer-wrapper footer-layout1" data-bg-src="assets/img/bg/footer_bg_1.jpg">
+    <div class="widget-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                    <div class="col-lg-4 col-xl-4 col-12 col-md-8">
+                        <div class="widget footer-widget">
+                            <div class="th-widget-about">
+                                <div class="about-logo">
+                                    <a href=""><img src="assets/img/final_logo_white.svg" alt="CareNow Pharmacy"></a>
+                                </div>
+                                <p class="footer-info">
+                                    <i class="fal fa-location-dot"></i>
+                                    1039 Harley Strickland Blvd STE 600, Orange City, FL 32763
+                                </p>
+                                <p class="footer-info">
+                                    <i class="fal fa-envelope"></i>
+                                    <a href="mailto:Carenowpharmacy@gmail.com" class="info-box_link">Carenowpharmacy@gmail.com</a>
+                                </p>
+                                <p class="footer-info">
+                                    <i class="fal fa-phone"></i>
+                                    <a href="tel:+13864560055" class="info-box_link">+1 (386) 456-0055</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xl-2 col-md-4 col-12 ps-xl-5 ps-md-4 ps-2">
+                        <div class="widget widget_nav_menu footer-widget">
+                            <h3 class="widget_title">Quick Links</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="#about">About Us</a></li>
+                                    <li><a href="#services">Our Services</a></li>
+                                    <li><a href="#contact">Contact Us</a></li>
+                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-xl-6 col-md-12 col-12 ps-xl-5 ps-lg-3">
+                        <div class="widget footer-widget">
+                            <h3 class="widget_title">Our Services</h3>
+                            <div class="recent-post-wrap">
+                                <div class="recent-post">
+                                    <div class="media-img">
+                                        <a href=""><img src="assets/img/blog/family_care.svg" alt="Blog Image"></a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="post-title"><a class="text-inherit" href="">Family care</a></h4>
+                                        <div class="recent-post-meta">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <a href=""><i class="fa-solid fa-circle-chevron-right"></i>Adherence Packaging</a>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href=""><i class="fa-solid fa-circle-chevron-right"></i>Medication Therapy Management</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <a href=""><i class="fa-solid fa-circle-chevron-right"></i>Free Delivery Services</a>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href=""><i class="fa-solid fa-circle-chevron-right"></i>Patient Assistant Programs</a>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recent-post">
+                                    <div class="media-img">
+                                        <a href=""><img src="assets/img/blog/pet_care.svg" alt="Blog Image"></a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="post-title"><a class="text-inherit" href="">Pet care</a></h4>
+                                        <div class="recent-post-meta">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <a href=""><i class="fa-solid fa-circle-chevron-right"></i>Pet Prescriptions</a>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href=""><i class="fa-solid fa-circle-chevron-right"></i>Pet Supplements</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <a href=""><i class="fa-solid fa-circle-chevron-right"></i>Specialized Equine Care & Prescriptions</a>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap">
+            <div class="container">
+                <div class="row gy-2 align-items-center">
+                    <div class="col-md-7">
+                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 <a href="">CareNow</a>. All Rights Reserved.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+   <!-- Scroll To Top -->
+   <div class="scroll-top">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+    </svg>
+    </div>
+
+    <div class="fab-container">
+        <div class="fab-options">
+            <button class="fab-option call" data-tooltip="Call Us">
+                <a href="tel:+13864560055"><i class="fas fa-phone"></i></a>
+            </button>
+            <button class="fab-option email" data-tooltip="Email Us">
+                <a href="mailto:Carenowpharmacy@gmail.com"><i class="fas fa-envelope"></i></a>
+            </button>
+            <button class="fab-option location" data-tooltip="Our Location">
+                <a href="https://www.google.com/maps/dir//1039+Harley+Strickland+Blvd+STE+600,+Orange+City,+FL+32763"><i class="fas fa-map-marker-alt"></i></a>
+            </button>
+        </div>
+        <button class="fab-main" id="fabMain">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+
+
+    <!--==============================
+    All Js File
+============================== -->
+    <!-- Jquery -->
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <!-- Swiper Js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- datetimepicker -->
+    <script src="assets/js/jquery.datetimepicker.min.js"></script>
+    <!-- Range Slider -->
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <!-- Isotope Filter -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script> -->
+
+    <!-- Main Js File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Adherence Packaging Modal -->
+    <div class="modal fade" id="adherenceModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="adherenceModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title service-main-title" id="adherenceModalLabel">Adherence Packaging</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="service-modal-content">
+                        <!-- Introduction Section -->
+                        <div class="service-intro mb-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-6" style="display: flex; justify-content: center;">
+                                    <img src="assets/img/services/adherence-packaging.png" alt="Adherence Packaging" class="img-fluid rounded service-image">
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="service-description">
+                                        At the heart of your health journey stands our innovative adherence packaging solution – a testament to our commitment to your wellbeing. We understand that managing multiple medications can be overwhelming, which is why we've revolutionized the experience with our smart packaging technology.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- What We Offer Section -->
+                        <div class="service-features mb-4">
+                            <h4 class="section-subtitle">What We Offer:</h4>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <ul class="primary-list" style="list-style-type: none;">
+                                        <li style="display: flex; align-items: center;">
+                                            
+                                            <div style="line-height: 0.3;">
+                                                <h6>Custom-organized daily medication packets</h6>
+                                                <p>Personalized packets for each dose time</p>
+                                            </div>
+                                        </li>
+                                        <li style="display: flex; align-items: center;">
+                                            
+                                            <div>
+                                                <h6>Clear, easy-to-read labels</h6>
+                                                <p>With precise time and date information</p>
+                                            </div>
+                                        </li>
+                                        <li style="display: flex; align-items: center;">
+                                            
+                                            <div>
+                                                <h6>Color-coded packages</h6>
+                                                <p>Distinct colors for each family member</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="secondary-list" style="list-style-type: none;">
+                                        <li style="display: flex; align-items: center;">
+                                            
+                                            <div>
+                                                <h6>Flexible Preparation Options</h6>
+                                                <p>Weekly and monthly packaging available</p>
+                                            </div>
+                                        </li>
+                                        <li style="display: flex; align-items: center;">
+                                            <div>
+                                                <h6>Automatic Refill Sync</h6>
+                                                <p>Never run out of medications</p>
+                                            </div>
+                                        </li>
+                                        <li style="display: flex; align-items: center;">
+                                            <div>
+                                                <h6>Free Consultation</h6>
+                                                <p>Expert medication review included</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Impact Section -->
+                        <div class="impact-section mb-4">
+                            <h4 class="section-subtitle">The Impact:</h4>
+                            <div class="row g-3">
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="impact-card">
+                                        <div class="impact-number">
+                                            <span class="counter" data-target="96">96</span>%
+                                        </div>
+                                        <div class="impact-text">Improvement in medication adherence</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="impact-card">
+                                        <div class="impact-number">
+                                            <span class="counter" data-target="80">80</span>%
+                                        </div>
+                                        <div class="impact-text">Reduction in medication errors</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="impact-card">
+                                        <div class="impact-number">
+                                            <span class="counter" data-target="75">75</span>%
+                                        </div>
+                                        <div class="impact-text">Decrease in medication stress</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="impact-card">
+                                        <div class="impact-number">
+                                            <span class="counter" data-target="100">100</span>%
+                                        </div>
+                                        <div class="impact-text">Synchronized refills</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call to Action Section -->
+                        <div class="service-cta">
+                            <h5 class="cta-title">Ready to simplify your medication routine?</h5>
+                            <p>Contact us today for a free consultation and personalized adherence packaging demo.</p>
+                            <a href="#contact" class="th-btn" data-bs-dismiss="modal">Contact Us Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Free Delivery Modal -->
+    <div class="modal fade" id="deliveryModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deliveryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title service-main-title" id="deliveryModalLabel">Free Delivery</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="service-modal-content">
+                        <!-- Introduction Section -->
+                        <div class="service-intro mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-md-6" style="display: flex; justify-content: center;">
+                                    <img src="assets/img/services/delivery.png" alt="Free Delivery Service" class="img-fluid rounded service-image">
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="service-description">
+                                        More than just a convenience, our free delivery service is our promise to ensure you never miss a dose. In today's fast-paced world, we bring the pharmacy to your doorstep, maintaining the highest standards of care from our facility to your home.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Premium Features Section -->
+                        <div class="delivery-features mt-4">
+                            <h4 class="section-subtitle">Our Premium Delivery Experience:</h4>
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon green">
+                                            <i class="fas fa-truck"></i>
+                                        </div>
+                                        <h5>Same-day delivery options</h5>
+                                        <p>Orders placed before 2 PM qualify for same-day delivery within our service area</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon green">
+                                            <i class="fas fa-temperature-low"></i>
+                                        </div>
+                                        <h5>Temperature-controlled vehicles</h5>
+                                        <p>Ensuring medication safety during transport</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon green">
+                                            <i class="fas fa-map-marked-alt"></i>
+                                        </div>
+                                        <h5>Real-time tracking</h5>
+                                        <p>Track your delivery with our mobile-friendly tracking system</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon navy">
+                                            <i class="fas fa-hands-wash"></i>
+                                        </div>
+                                        <h5>Contactless delivery available</h5>
+                                        <p>Safe and convenient delivery options</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon navy">
+                                            <i class="fas fa-user-shield"></i>
+                                        </div>
+                                        <h5>Professional Delivery Team</h5>
+                                        <p>Trained and background-checked delivery professionals</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon navy">
+                                            <i class="fas fa-shield-alt"></i>
+                                        </div>
+                                        <h5>Secure packaging</h5>
+                                        <p>Tamper-evident seals for your safety</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Impact Stats -->
+                        <div class="impact-section mt-5">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10">
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="stat-card">
+                                                <div class="stat-number">10,000+</div>
+                                                <div class="stat-label">Households Served in Our Community</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="stat-card">
+                                                <div class="stat-number">50,000+</div>
+                                                <div class="stat-label">Successful Deliveries Annually</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call to Action -->
+                        <div class="service-cta mt-5">
+                            <h5 class="cta-title">Ready to experience our premium delivery service?</h5>
+                            <p>Contact us today to learn more about our delivery services.</p>
+                            <a href="#contact" class="th-btn" data-bs-dismiss="modal">Contact Us Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Medication Therapy Management Modal -->
+    <div class="modal fade" id="therapyModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="therapyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title service-main-title" id="therapyModalLabel">Medication Therapy Management</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="service-modal-content">
+                        <!-- Introduction Section -->
+                        <div class="service-intro mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-md-6" style="display: flex; justify-content: center;">
+                                    <img src="assets/img/services/Medical Report.png" alt="Medication Therapy Management" class="img-fluid rounded service-image">
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="service-description">
+                                        Your medications should work in harmony to enhance your health, not complicate it. Our Medication Therapy Management program represents the gold standard in pharmaceutical care, where science meets personalized attention.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comprehensive Review Section -->
+                        <div class="therapy-features mt-4">
+                            <h4 class="section-subtitle">Our Comprehensive Review Includes:</h4>
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon therapy">
+                                            <i class="fas fa-pills"></i>
+                                        </div>
+                                        <h5>Complete medication analysis</h5>
+                                        <p>Thorough review of all your medications, supplements, and health conditions</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon therapy">
+                                            <i class="fas fa-shield-virus"></i>
+                                        </div>
+                                        <h5>Drug interaction screening</h5>
+                                        <p>Advanced screening for potential interactions between medications</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon therapy">
+                                            <i class="fas fa-chart-line"></i>
+                                        </div>
+                                        <h5>Side effect management</h5>
+                                        <p>Proactive strategies to minimize and manage side effects</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon therapy">
+                                            <i class="fas fa-dollar-sign"></i>
+                                        </div>
+                                        <h5>Cost optimization strategies</h5>
+                                        <p>Finding ways to reduce your medication expenses</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon therapy">
+                                            <i class="fas fa-heartbeat"></i>
+                                        </div>
+                                        <h5>Therapeutic outcome monitoring</h5>
+                                        <p>Regular monitoring of your treatment progress</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon therapy">
+                                            <i class="fas fa-users-medical"></i>
+                                        </div>
+                                        <h5>Healthcare provider coordination</h5>
+                                        <p>Seamless communication with all your healthcare providers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Success Stories Section -->
+                        <div class="success-section mt-5">
+                            <h4 class="section-subtitle">Success Stories</h4>
+                            <div class="row g-4">
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="success-card">
+                                        <div class="success-icon">
+                                            <i class="fas fa-search-plus"></i>
+                                        </div>
+                                        <div class="success-number">5,000+</div>
+                                        <div class="success-text">Drug interactions identified and resolved</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="success-card">
+                                        <div class="success-icon">
+                                            <i class="fas fa-piggy-bank"></i>
+                                        </div>
+                                        <div class="success-number">$720</div>
+                                        <div class="success-text">Average annual patient savings</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="success-card">
+                                        <div class="success-icon">
+                                            <i class="fas fa-shield-alt"></i>
+                                        </div>
+                                        <div class="success-number">85%</div>
+                                        <div class="success-text">Reduction in adverse drug reactions</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="success-card">
+                                        <div class="success-icon">
+                                            <i class="fas fa-chart-bar"></i>
+                                        </div>
+                                        <div class="success-number">92%</div>
+                                        <div class="success-text">Improved therapeutic outcomes</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Expert Team Section -->
+                        <div class="expert-section mt-5">
+                            <h4 class="section-subtitle">Our Expert Team</h4>
+                            <div class="row g-4">
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="expert-card">
+                                        <div class="expert-icon">
+                                            <i class="fas fa-user-md fa-2x"></i>
+                                        </div>
+                                        <h5 class="expert-title">Board-certified pharmacists</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="expert-card">
+                                        <div class="expert-icon">
+                                            <i class="fas fa-brain fa-2x"></i>
+                                        </div>
+                                        <h5 class="expert-title">Specialized in chronic disease management</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="expert-card">
+                                        <div class="expert-icon">
+                                            <i class="fas fa-graduation-cap fa-2x"></i>
+                                        </div>
+                                        <h5 class="expert-title">Continuous professional development</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="expert-card">
+                                        <div class="expert-icon">
+                                            <i class="fas fa-hands-helping fa-2x"></i>
+                                        </div>
+                                        <h5 class="expert-title">Direct provider collaboration</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call to Action -->
+                        <div class="service-cta mt-5">
+                            <h5 class="cta-title">Take control of your medication journey</h5>
+                            <p>Book your comprehensive medication review today</p>
+                            <a href="#contact" class="th-btn" data-bs-dismiss="modal">Schedule Review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Patient Assistance Program Modal -->
+    <div class="modal fade" id="assistanceModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="assistanceModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title service-main-title" id="assistanceModalLabel">Patient Assistance Program</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="service-modal-content">
+                        <!-- Introduction Section -->
+                        <div class="service-intro mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-md-6" style="display: flex; justify-content: center;">
+                                    <img src="assets/img/services/patientAssistant.png" alt="Patient Assistance" class="img-fluid rounded service-image">
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="service-description">
+                                        At our pharmacy, we believe everyone deserves access to quality healthcare and essential medications. Our Patient Assistance Program is more than just financial support – it's your pathway to better health without the burden of overwhelming costs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- What We Offer Section -->
+                        <div class="assistance-features mt-4">
+                            <h4 class="section-subtitle">What We Offer</h4>
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="assistance-card">
+                                        <div class="card-icon">
+                                            <i class="fas fa-comments-dollar"></i>
+                                        </div>
+                                        <h5>Financial Counseling</h5>
+                                        <p>Personalized financial counseling to explore all available assistance options</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="assistance-card">
+                                        <div class="card-icon">
+                                            <i class="fas fa-clipboard-check"></i>
+                                        </div>
+                                        <h5>Direct Enrollment</h5>
+                                        <p>Assistance with pharmaceutical manufacturer programs</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="assistance-card">
+                                        <div class="card-icon">
+                                            <i class="fas fa-hand-holding-medical"></i>
+                                        </div>
+                                        <h5>Medicare Support</h5>
+                                        <p>Medicare and Medicaid navigation support</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="assistance-card">
+                                        <div class="card-icon">
+                                            <i class="fas fa-tags"></i>
+                                        </div>
+                                        <h5>Discount Programs</h5>
+                                        <p>Access to exclusive discount programs and copay assistance cards</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="assistance-card">
+                                        <div class="card-icon">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <h5>Provider Coordination</h5>
+                                        <p>Coordination with healthcare providers for cost-effective alternatives</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="assistance-card">
+                                        <div class="card-icon">
+                                            <i class="fas fa-chart-line"></i>
+                                        </div>
+                                        <h5>Cost Reviews</h5>
+                                        <p>Regular medication cost reviews to ensure continued affordability</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Success Stories Section -->
+                        <div class="success-metrics mt-5">
+                            <h4 class="section-subtitle">Our Impact</h4>
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="metric-card">
+                                        <div class="metric-icon">
+                                            <i class="fas fa-percentage"></i>
+                                        </div>
+                                        <div class="metric-number">67%</div>
+                                        <div class="metric-text">Average reduction in medication costs</div>
+                                        <div class="metric-subtext">Helped over 2,000 patients</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="metric-card">
+                                        <div class="metric-icon">
+                                            <i class="fas fa-user-check"></i>
+                                        </div>
+                                        <div class="metric-number">95%</div>
+                                        <div class="metric-text">Successful program enrollment rate</div>
+                                        <div class="metric-subtext">For eligible patients</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="metric-card">
+                                        <div class="metric-icon">
+                                            <i class="fas fa-dollar-sign"></i>
+                                        </div>
+                                        <div class="metric-number">$1.5M+</div>
+                                        <div class="metric-text">Community savings last year</div>
+                                        <div class="metric-subtext">In medication costs</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Commitment Section -->
+                        <div class="commitment-section mt-5">
+                            <h4 class="section-subtitle">Our Commitment to You</h4>
+                            <div class="commitment-grid">
+                                <div class="commitment-item">
+                                    <i class="fas fa-piggy-bank"></i>
+                                    <p>Reduce or eliminate out-of-pocket expenses</p>
+                                </div>
+                                <div class="commitment-item">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <p>Find creative solutions for medication coverage</p>
+                                </div>
+                                <div class="commitment-item">
+                                    <i class="fas fa-file-alt"></i>
+                                    <p>Handle all paperwork and administrative requirements</p>
+                                </div>
+                                <div class="commitment-item">
+                                    <i class="fas fa-heart"></i>
+                                    <p>Provide ongoing support as your medication needs change</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call to Action -->
+                        <div class="service-cta mt-5">
+                            <h5 class="cta-title">Don't let cost stand between you and your health</h5>
+                            <p>Contact our Patient Assistance Team for a free consultation today</p>
+                            <a href="#contact" class="th-btn" data-bs-dismiss="modal">Get Started Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pet Prescriptions Modal -->
+    <div class="modal fade" id="petModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="petModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title service-main-title" id="petModalLabel">Pet Prescriptions</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="service-modal-content">
+                        <!-- Introduction Section -->
+                        <div class="service-intro mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-md-6" style="display: flex; justify-content: center;">
+                                    <img src="assets/img/services/petcare.svg" alt="Pet Pharmacy Services" class="img-fluid rounded service-image">
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="service-description">
+                                        Your pets are family, and they deserve the same level of pharmaceutical excellence we provide to our human patients. Our comprehensive veterinary pharmacy services are designed to meet the unique needs of every pet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Services Section -->
+                        <div class="pet-services mt-5">
+                            <h4 class="section-subtitle">Our Specialized Pet Pharmacy Services</h4>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="pet-service-card">
+                                        <i class="fas fa-mortar-pestle"></i>
+                                        <h5>Custom Compounding</h5>
+                                        <p>Custom medication compounding and flavoring options for easier administration and stress-free medicine time</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="pet-service-card">
+                                        <i class="fas fa-balance-scale"></i>
+                                        <h5>Precise Care</h5>
+                                        <p>Precise dosing for pets of all sizes and species with direct coordination with veterinarians</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="pet-service-card">
+                                        <i class="fas fa-home"></i>
+                                        <h5>Convenient Service</h5>
+                                        <p>Home delivery options and automatic refill programs to ensure continuous care</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="pet-service-card">
+                                        <i class="fas fa-comments"></i>
+                                        <h5>Expert Guidance</h5>
+                                        <p>Comprehensive medication counseling for pet owners to ensure proper administration</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Compounding Solutions -->
+                        <div class="compounding-section mt-5">
+                            <h4 class="section-subtitle">Expert Compounding Solutions</h4>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="compound-card">
+                                        <div class="compound-icon">
+                                            <i class="fas fa-vial"></i>
+                                        </div>
+                                        <div class="compound-content">
+                                            <h5>Custom Formulations</h5>
+                                            <p>Transform medications into pet-friendly liquid formulations and flavored treats</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="compound-card">
+                                        <div class="compound-icon">
+                                            <i class="fas fa-band-aid"></i>
+                                        </div>
+                                        <div class="compound-content">
+                                            <h5>Alternative Solutions</h5>
+                                            <p>Specialized applications for difficult-to-medicate pets</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quality Assurance -->
+                        <div class="quality-section mt-5">
+                            <h4 class="section-subtitle">Our Quality Standards</h4>
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="quality-item">
+                                        <p>USP 800 Compliant Facilities & Strict Quality Control</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="quality-item">
+                                        <p>FDA-Approved Medications & Verified Manufacturers</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="quality-item">
+                                        <p>Temperature-Monitored Storage</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call to Action -->
+                        <div class="service-cta mt-5">
+                            <h5 class="cta-title">Give your pets the care they deserve</h5>
+                            <p>Contact us to learn more about our pet pharmacy services</p>
+                            <a href="#contact" class="th-btn" data-bs-dismiss="modal">Contact Us Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Equine Care Modal -->
+    <div class="modal fade" id="equineModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="equineModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title service-main-title" id="equineModalLabel">Specialized Equine Care & Prescriptions</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="service-modal-content">
+                        <!-- Introduction Section -->
+                        <div class="service-intro mb-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-5" style="display: flex; justify-content: center;">
+                                    <img src="assets/img/services/horsecare.png" alt="Equine Care Services" class="img-fluid rounded service-image">
+                                </div>
+                                <div class="col-md-7">
+                                    <p class="service-description">
+                                        With decades of experience in equine pharmacy care, we understand the unique challenges of managing horse health. Our specialized equine services combine pharmaceutical expertise with deep knowledge of equine medicine.
+                                    </p>
+                                    <div class="equine-highlights">
+                                        <span class="highlight-badge">FEI & USEF Compliant</span>
+                                        <span class="highlight-badge">24/7 Emergency Support</span>
+                                        <span class="highlight-badge">Show Circuit Experience</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                      
+
+                            <div class="tab-content" id="equineTabContent">
+                                <!-- Services Tab -->
+                                <div class="tab-pane fade show active" id="services">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="equine-card">
+                                                <h5><i class="fas fa-pills"></i> Medication Management</h5>
+                                                <ul class="equine-list">
+                                                    <li>Custom compound medications</li>
+                                                    <li>Performance horse medication management</li>
+                                                    <li>Show-legal medication verification</li>
+                                                    <li>Prescription feed supplements</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mt-xl-0 mt-lg-0 mt-md-0 mt-3">
+                                            <div class="equine-card">
+                                                <h5><i class="fas fa-calculator"></i> Precision Care</h5>
+                                                <ul class="equine-list">
+                                                    <li>Joint therapy compounds</li>
+                                                    <li>Precise dosing calculations</li>
+                                                    <li>Emergency medication supplies</li>
+                                                    <li>Custom strength formulations</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="equine-services mt-4">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link  active" data-bs-toggle="tab" data-bs-target="#compounding">
+                                                <i class="fas fa-flask"></i> Compounding
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#quality">
+                                                <i class="fas fa-shield-alt"></i> Standards
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#support">
+                                                <i class="fas fa-headset"></i> Support
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Compounding Tab -->
+                                <div class="tab-pane fade show active tabTemp mt-3" id="compounding">
+                                    <div class="row g-3">
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="compound-option">
+                                                <i class="fas fa-capsules"></i>
+                                                <h6>Oral Preparations</h6>
+                                                <p>Pastes, suspensions, and flavored medications</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="compound-option">
+                                                <i class="fas fa-syringe"></i>
+                                                <h6>Injectable Medications</h6>
+                                                <p>Sterile compounding capabilities</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="compound-option">
+                                                <i class="fas fa-pump-medical"></i>
+                                                <h6>Topical Preparations</h6>
+                                                <p>Custom formulations for external use</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Quality Standards Tab -->
+                                <div class="tab-pane fade tabTemp mt-3" id="quality">
+                                    <div class="standards-grid">
+                                        <div class="standard-item">
+                                            <i class="fas fa-certificate"></i>
+                                            <p>FEI and USEF compliance verification</p>
+                                        </div>
+                                        <div class="standard-item">
+                                            <i class="fas fa-check-double"></i>
+                                            <p>FDA-approved base ingredients</p>
+                                        </div>
+                                        <div class="standard-item">
+                                            <i class="fas fa-vial"></i>
+                                            <p>Sterile compounding capabilities</p>
+                                        </div>
+                                        <div class="standard-item">
+                                            <i class="fas fa-thermometer-half"></i>
+                                            <p>Environmental monitoring</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Professional Support Tab -->
+                                <div class="tab-pane fade mt-3 tabTemp" id="support">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="support-card">
+                                                <h5>Care Coordination</h5>
+                                                <ul class="support-list">
+                                                    <li>Direct veterinarian collaboration</li>
+                                                    <li>Training stable coordination</li>
+                                                    <li>Competition regulation compliance</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="support-card">
+                                                <h5>Travel & Planning</h5>
+                                                <ul class="support-list">
+                                                    <li>Medication timing schedules</li>
+                                                    <li>Travel medication planning</li>
+                                                    <li>Worldwide shipping capability</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call to Action -->
+                        <div class="service-cta mt-4">
+                            <h5 class="cta-title">Begin Your Partnership</h5>
+                            <p>Contact our equine pharmacy team to discuss your horse's specific needs</p>
+                            <a href="#contact" class="th-btn" data-bs-dismiss="modal">Contact Us Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pet Supplements Modal -->
+    <div class="modal fade" id="supplementsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="supplementsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title service-main-title" id="supplementsModalLabel">Pet Supplements</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="service-modal-content">
+                        <!-- Introduction -->
+                        <div class="supplements-intro mb-4">
+                            <p class="service-description">
+                                Support your pet's optimal health with our premium selection of veterinary-approved supplements. Our comprehensive approach to pet wellness combines pharmaceutical expertise with the latest in nutritional science.
+                            </p>
+                        </div>
+
+                        <!-- Expandable Sections -->
+                        <div class="supplements-sections row g-4">
+                            <!-- Left Column -->
+                            <div class="col-lg-6">
+                                <div class="accordion" id="supplementsLeft">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#categoriesCollapse">
+                                                Premium Supplement Categories
+                                            </button>
+                                        </h2>
+                                        <div id="categoriesCollapse" class="accordion-collapse collapse show" data-bs-parent="#supplementsLeft">
+                                            <div class="accordion-body">
+                                                <ul class="supplements-list">
+                                                    <li><i class="fas fa-bone"></i> Joint health and mobility</li>
+                                                    <li><i class="fas fa-shield-virus"></i> Immune system support</li>
+                                                    <li><i class="fas fa-stomach"></i> Digestive health</li>
+                                                    <li><i class="fas fa-paw"></i> Skin and coat care</li>
+                                                    <li><i class="fas fa-heart"></i> Senior pet wellness</li>
+                                                    <li><i class="fas fa-running"></i> Performance enhancement</li>
+                                                    <li><i class="fas fa-tooth"></i> Dental health</li>
+                                                    <li><i class="fas fa-brain"></i> Behavioral support</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qualityCollapse">
+                                                Quality Commitment
+                                            </button>
+                                        </h2>
+                                        <div id="qualityCollapse" class="accordion-collapse collapse" data-bs-parent="#supplementsLeft">
+                                            <div class="accordion-body">
+                                                <ul class="supplements-list">
+                                                    <li><i class="fas fa-check-circle"></i> Third-party tested products</li>
+                                                    <li><i class="fas fa-certificate"></i> Verified ingredient sourcing</li>
+                                                    <li><i class="fas fa-clock"></i> Stability guaranteed</li>
+                                                    <li><i class="fas fa-vial"></i> Bioavailability tested</li>
+                                                    <li><i class="fas fa-industry"></i> Made in FDA-registered facilities</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#guidanceCollapse">
+                                                Expert Guidance
+                                            </button>
+                                        </h2>
+                                        <div id="guidanceCollapse" class="accordion-collapse collapse" data-bs-parent="#supplementsLeft">
+                                            <div class="accordion-body">
+                                                <ul class="supplements-list">
+                                                    <li><i class="fas fa-comments"></i> Free nutritional consultations</li>
+                                                    <li><i class="fas fa-sync"></i> Supplement interaction checks</li>
+                                                    <li><i class="fas fa-calendar-alt"></i> Age-specific recommendations</li>
+                                                    <li><i class="fas fa-paw"></i> Breed-specific guidance</li>
+                                                    <li><i class="fas fa-chart-line"></i> Performance optimization plans</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-lg-6">
+                                <div class="accordion" id="supplementsRight">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#whyChooseCollapse">
+                                                Why Choose Our Supplements
+                                            </button>
+                                        </h2>
+                                        <div id="whyChooseCollapse" class="accordion-collapse collapse show" data-bs-parent="#supplementsRight">
+                                            <div class="accordion-body">
+                                                <ul class="supplements-list">
+                                                    <li><i class="fas fa-user-md"></i> Veterinarian-approved selections</li>
+                                                    <li><i class="fas fa-thumbs-up"></i> Satisfaction guarantee</li>
+                                                    <li><i class="fas fa-tags"></i> Competitive pricing</li>
+                                                    <li><i class="fas fa-sync-alt"></i> Automatic reorder options</li>
+                                                    <li><i class="fas fa-clipboard-check"></i> Quality assurance testing</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#featuresCollapse">
+                                                Special Features
+                                            </button>
+                                        </h2>
+                                        <div id="featuresCollapse" class="accordion-collapse collapse" data-bs-parent="#supplementsRight">
+                                            <div class="accordion-body">
+                                                <ul class="supplements-list">
+                                                    <li><i class="fas fa-star"></i> Palatability guaranteed</li>
+                                                    <li><i class="fas fa-pills"></i> Easy administration forms</li>
+                                                    <li><i class="fas fa-ruler"></i> Precise dosing instructions</li>
+                                                    <li><i class="fas fa-chart-bar"></i> Progress tracking support</li>
+                                                    <li><i class="fas fa-clipboard-list"></i> Regular quality reviews</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call to Action -->
+                        <div class="service-cta mt-4">
+                            <h5 class="cta-title">Start Your Pet's Wellness Journey</h5>
+                            <p>Schedule a free consultation with our pet health specialists to create a customized supplement plan for your pet's specific needs.</p>
+                            <a href="#contact" class="th-btn" data-bs-dismiss="modal">Schedule Consultation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms and Conditions Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 80%; height: 50vh;">
+            <div class="modal-content" style="height: 100%; background: white;">
+                <div class="modal-header" style="border-bottom: 2px solid #21285a; background: #f8f9fa;">
+                    <h3 class="modal-title" id="termsModalLabel" style="color: #21285a; font-weight: bold;">Terms & Conditions</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 30px; height: calc(100% - 120px); overflow-y: auto; background: white;">
+                    <div style="height: 100%; background: white;">
+                        <h4 style="color: #21285a; margin-bottom: 20px;">Terms & Conditions - CareNow Pharmacy</h4>
+                        
+                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                            By using our pharmacy services, you agree to comply with and be bound by the following terms and conditions. 
+                            Please review these terms carefully before using our services.
+                        </p>
+
+                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">1. SMS Consent Communication</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                            Information (Phone Numbers) obtained as part of the SMS consent process will not be shared with third parties for marketing purposes. 
+                            SMS opt-in or phone numbers for the purpose of SMS are not being shared with any third party and affiliate company for marketing purposes.
+                        </p>
+
+                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">2. Types of SMS Communications</h5>
+                        <p style="margin-bottom: 10px; line-height: 1.6; color: #333;">
+                            If consent has been given to receive text messages from CareNow Pharmacy, messages may be received related to the following:
+                        </p>
+                        <ul style="margin-bottom: 15px; padding-left: 20px; color: #333;">
+                            <li>Prescription ready notifications</li>
+                            <li>Appointment reminders</li>
+                            <li>Follow-up messages</li>
+                            <li>Billing inquiries</li>
+                            <li>Refill reminders</li>
+                            <li>Health and wellness tips</li>
+                        </ul>
+                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333; font-style: italic;">
+                            Example: "Hello, this is a reminder that your prescription is ready for pickup at CareNow Pharmacy. Reply STOP to opt out of SMS messaging at any time."
+                        </p>
+
+                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">3. Message Frequency</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                            Message frequency may vary depending on the type of communication. You may receive up to 2 SMS messages per week regarding your prescriptions, appointments, or account status. 
+                            Message frequency may vary based on your pharmacy activity and health needs.
+                        </p>
+
+                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">4. Potential Fees for SMS Messaging</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                            Standard message and data rates may apply, depending on the carrier's pricing plan. These fees may vary if the message is sent domestically or internationally. 
+                            CareNow Pharmacy is not responsible for carrier charges.
+                        </p>
+
+                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">5. Opt-In Method</h5>
+                        <p style="margin-bottom: 10px; line-height: 1.6; color: #333;">
+                            Opt-in to receive SMS messages from CareNow Pharmacy can be done in the following ways:
+                        </p>
+                        <ul style="margin-bottom: 15px; padding-left: 20px; color: #333;">
+                            <!-- <li>Verbally, during a conversation with our staff</li>
+                            <li>By submitting an online form on our website</li>
+                            <li>By filling out a paper form at our pharmacy location</li> -->
+                            <li>By checking the SMS consent box on prescription forms</li>
+                        </ul>
+
+                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">6. Opt-Out Method</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                            Opting out of receiving SMS messages can be done at any time by replying "STOP" to any SMS message received. 
+                            Alternatively, direct contact can be made to request removal from the messaging list by calling (386) 456-0055 or emailing Carenowpharmacy@gmail.com.
+                            If SMS messages are not desired, the SMS consent box on forms can be left unchecked.
+                        </p>
+
+                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">7. Help and Support</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                            For any issues with SMS messaging, reply with the keyword HELP to any message. 
+                            Alternatively, help can be obtained directly from us at (386) 456-0055 or Carenowpharmacy@gmail.com.
+                        </p>
+
+                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">8. Prescription Services & Requirements</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                            All prescriptions must be valid and from licensed healthcare providers. We reserve the right to verify prescriptions with prescribing physicians 
+                            and may refuse to fill prescriptions that don't meet legal requirements. Controlled substances require additional verification and may have quantity limitations.
+                        </p>
+
+                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">9. Privacy Policy & HIPAA Compliance</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                            We are committed to protecting your health information in accordance with HIPAA regulations. Your prescription and health information 
+                            will be kept confidential and used only for legitimate healthcare purposes. Patient information will never be sold or shared for marketing purposes.
+                        </p>
+
+                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">10. Payment Terms & Insurance</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                            Payment is due at the time of service unless other arrangements have been made. We accept most insurance plans and will work with you to maximize your benefits. 
+                            Co-pays and deductibles are due at time of pickup. We also accept cash, credit cards, and HSA/FSA cards.
+                        </p>
+
+                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">11. Refund & Return Policy</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                            Prescription medications cannot be returned once dispensed due to safety and regulatory requirements. 
+                            Refunds may be considered for billing errors or insurance processing issues. Over-the-counter items may be returned within 30 days with receipt.
+                        </p>
+
+                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">12. Standard Messaging Disclosures</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                            Message and data rates may apply. Opt out at any time by texting "STOP." 
+                            For assistance, text "HELP" or visit our Terms and Conditions and Privacy Policy pages. Message frequency may vary.
+                        </p>
+
+                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">13. Limitation of Liability</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                            CareNow Pharmacy's liability is limited to the cost of the medication or service provided. We are not responsible for adverse drug reactions 
+                            when medications are used as prescribed, delays in delivery due to weather or circumstances beyond our control, or technical issues with SMS services.
+                        </p>
+
+                        <div style="margin-top: 25px; padding: 15px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #21285a;">
+                            <p style="margin-bottom: 10px; font-weight: bold; color: #21285a;">Quick Contact:</p>
+                            <p style="margin: 5px 0; color: #333;">Phone: (386) 456-0055</p>
+                            <p style="margin: 5px 0; color: #333;">Email: Carenowpharmacy@gmail.com</p>
+                            <p style="margin: 5px 0; color: #333;">Address: 1039 Harley Strickland Blvd STE 600, Orange City, FL 32763</p>
+                        </div>
+
+                        <p style="margin-top: 20px; font-style: italic; color: #666; font-size: 0.9em; text-align: center;">
+                            Last updated: October 2025 | CareNow Pharmacy - Your Complete Family Pharmacy
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer" style="border-top: 2px solid #e9ecef; background: #f8f9fa; justify-content: center;">
+                    <button type="button" class="btn" data-bs-dismiss="modal" 
+                            style="background: #21285a; color: white; padding: 10px 30px; border-radius: 25px; font-weight: 500; border: none; min-width: 120px;">
+                        Accept & Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // Modal specific code
+    document.querySelectorAll('[data-bs-dismiss="modal"][href="#contact"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation(); // Stop event from bubbling up
+            
+            const modal = this.closest('.modal');
+            const modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+            
+            modal.addEventListener('hidden.bs.modal', function () {
+                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            }, { once: true });
+        });
+    });
+
+    // Hide scroll-to-top button when Terms & Conditions modal is open
+    const termsModal = document.getElementById('termsModal');
+    const scrollTopButton = document.querySelector('.scroll-top');
+    
+    if (termsModal && scrollTopButton) {
+        termsModal.addEventListener('show.bs.modal', function () {
+            scrollTopButton.style.display = 'none';
+            scrollTopButton.style.visibility = 'hidden';
+            scrollTopButton.style.opacity = '0';
+        });
+        
+        termsModal.addEventListener('hidden.bs.modal', function () {
+            scrollTopButton.style.display = '';
+            scrollTopButton.style.visibility = '';
+            scrollTopButton.style.opacity = '';
+        });
+    }
+
+    // FAB (Floating Action Button) functionality
+    const fabMain = document.getElementById('fabMain');
+    const fabOptions = document.querySelector('.fab-options');
+    
+    if (fabMain && fabOptions) {
+        let isOpen = false;
+        
+        fabMain.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            isOpen = !isOpen;
+            
+            if (isOpen) {
+                fabMain.classList.add('active');
+                fabOptions.classList.add('show');
+            } else {
+                fabMain.classList.remove('active');
+                fabOptions.classList.remove('show');
+            }
+        });
+        
+        // Close FAB when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!fabMain.contains(e.target) && !fabOptions.contains(e.target)) {
+                isOpen = false;
+                fabMain.classList.remove('active');
+                fabOptions.classList.remove('show');
+            }
+        });
+        
+        // Prevent fab options from closing when clicked
+        fabOptions.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    }
+
+    // General smooth scroll code for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            // Skip if this is a modal CTA link
+            if (this.hasAttribute('data-bs-dismiss')) {
+                return;
+            }
+            
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId !== '#') {
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    });
+    </script>
+    <script>
+        // Dark Mode Initialization and Listening logic
+        (function() {
+            const themeToggleBtn = document.getElementById('themeToggleBtn');
+            const themeIcon = themeToggleBtn ? themeToggleBtn.querySelector('i') : null;
+            
+            // Use dark theme by default if no preference is stored
+            let currentTheme = localStorage.getItem('theme') || 'dark';
+            
+            function setTheme(theme) {
+                document.documentElement.setAttribute('data-theme', theme);
+                if (themeIcon) {
+                    if (theme === 'dark') {
+                        themeIcon.classList.remove('fa-moon');
+                        themeIcon.classList.add('fa-sun');
+                    } else {
+                        themeIcon.classList.remove('fa-sun');
+                        themeIcon.classList.add('fa-moon');
+                    }
+                }
+            }
+
+            // Init
+            setTheme(currentTheme);
+
+            if (themeToggleBtn) {
+                themeToggleBtn.addEventListener('click', () => {
+                    let theme = document.documentElement.getAttribute('data-theme');
+                    let targetTheme = theme === 'dark' ? 'light' : 'dark';
+                    localStorage.setItem('theme', targetTheme);
+                    setTheme(targetTheme);
+                });
+            }
+        })();
+    </script>
+</body>
+
+</html>
