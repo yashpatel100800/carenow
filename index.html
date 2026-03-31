@@ -430,6 +430,52 @@
             color: var(--primary-vibrant);
         }
 
+        /* Location Toggle Styling */
+        .location-toggle-wrap {
+            display: inline-flex;
+            align-items: center;
+            background: var(--surface-color);
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+            padding: 4px;
+            margin-right: 15px;
+            box-shadow: var(--card-shadow);
+            vertical-align: middle;
+        }
+
+        .loc-btn {
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            padding: 6px 16px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .loc-btn.active {
+            background: var(--primary-vibrant);
+            color: #ffffff !important;
+            box-shadow: 0 4px 10px var(--border-glow);
+        }
+
+        [data-theme="dark"] .loc-btn:not(.active) {
+            color: #94a3b8;
+        }
+
+        @media (max-width: 991px) {
+            .location-toggle-wrap {
+                margin-right: 10px;
+                padding: 2px;
+            }
+            .loc-btn {
+                padding: 4px 10px;
+                font-size: 0.75rem;
+            }
+        }
+
         /* Images and Carousel */
         .imgCar img, .carousel-slide img, .img-box1 img {
             border-radius: 30px;
@@ -528,6 +574,10 @@
                         </div>
                         <div class="col-auto">
                             <div class="header-button">
+                                <div class="location-toggle-wrap">
+                                    <button class="loc-btn active" data-loc="orange" title="Orange City">Orange City</button>
+                                    <button class="loc-btn" data-loc="mtdora" title="Mt Dora">Mt Dora</button>
+                                </div>
                                 <button id="themeToggleBtn" class="theme-toggle" aria-label="Toggle Dark Mode">
                                     <i class="fas fa-moon"></i>
                                 </button>
@@ -2659,6 +2709,89 @@
                     setTheme(targetTheme);
                 });
             }
+        })();
+
+        // Location Toggle Logic
+        (function() {
+            const locations = {
+                orange: {
+                    address: "1039 Harley Strickland Blvd STE 600, Orange City, FL 32763",
+                    phone: "(386) 456-0055",
+                    phoneLink: "tel:+13864560055",
+                    maps: "https://www.google.com/maps/dir//1039+Harley+Strickland+Blvd+STE+600,+Orange+City,+FL+32763"
+                },
+                mtdora: {
+                    address: "18830 US-441, Mt Dora, FL 32757",
+                    phone: "(352) 559-3107",
+                    phoneLink: "tel:+13525593107",
+                    maps: "https://www.google.com/maps/dir//18830+US-441,+Mt+Dora,+FL+32757"
+                }
+            };
+
+            const locBtns = document.querySelectorAll('.loc-btn');
+            
+            function updateLocation(locKey) {
+                const data = locations[locKey];
+                localStorage.setItem('carenow_location', locKey);
+
+                // Update UI Buttons
+                locBtns.forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.loc === locKey);
+                });
+
+                // Update Header Links
+                const headerPhone = document.querySelector('.header-links a[href^="tel:"]');
+                const headerAddr = document.querySelector('.header-links a[href*="maps"]');
+                if (headerPhone) {
+                    headerPhone.href = data.phoneLink;
+                    headerPhone.textContent = data.phone;
+                }
+                if (headerAddr) {
+                    headerAddr.href = data.maps;
+                    headerAddr.textContent = data.address;
+                }
+
+                // Update Footer Links
+                const footerAddr = document.querySelector('.footer-info i.fa-location-dot')?.parentElement;
+                const footerPhone = document.querySelector('.footer-info a[href^="tel:"]');
+                if (footerAddr) {
+                    footerAddr.innerHTML = `<i class="fal fa-location-dot"></i> ${data.address}`;
+                }
+                if (footerPhone) {
+                    footerPhone.href = data.phoneLink;
+                    footerPhone.textContent = data.phone;
+                }
+
+                // Update FAB Buttons
+                const fabPhone = document.querySelector('.fab-option.call a');
+                const fabLoc = document.querySelector('.fab-option.location a');
+                if (fabPhone) fabPhone.href = data.phoneLink;
+                if (fabLoc) fabLoc.href = data.maps;
+
+                // Update Terms Modal Quick Contact
+                const modalContact = document.querySelector('#termsModal .modal-body div[style*="background: #f8f9fa"]');
+                if (modalContact) {
+                    const pTags = modalContact.querySelectorAll('p');
+                    pTags.forEach(p => {
+                        if (p.textContent.includes('Phone:')) p.textContent = `Phone: ${data.phone}`;
+                        if (p.textContent.includes('Address:')) p.textContent = `Address: ${data.address}`;
+                    });
+                }
+
+                // Update Form help number
+                const smsLabel = document.querySelector('label[for="sms_consent"]');
+                if (smsLabel) {
+                    smsLabel.innerHTML = smsLabel.innerHTML.replace(/\(\d{3}\)\s\d{3}-\d{4}/, data.phone);
+                }
+            }
+
+            locBtns.forEach(btn => {
+                btn.addEventListener('click', () => updateLocation(btn.dataset.loc));
+            });
+
+            // Initialize from storage or default to orange
+            const savedLoc = localStorage.getItem('carenow_location') || 'orange';
+            updateLocation(savedLoc);
         })();
     </script>
 </body>
