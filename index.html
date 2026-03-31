@@ -479,14 +479,26 @@
         }
 
         @media (max-width: 991px) {
-            .header-button .location-toggle-wrap,
             .header-button .theme-toggle,
             .header-button .th-btn:not(.th-menu-toggle) {
                 display: none !important;
             }
             
+            .header-button .location-toggle-wrap {
+                margin-right: 5px;
+                padding: 2px;
+                background: var(--surface-color);
+            }
+            
+            .header-button .loc-btn {
+                padding: 4px 8px;
+                font-size: 0.65rem;
+            }
+            
             .header-button {
-                gap: 10px;
+                gap: 5px;
+                display: flex;
+                align-items: center;
             }
 
             .mobile-toggles {
@@ -497,6 +509,34 @@
                 margin-top: 30px;
                 padding-top: 20px;
                 border-top: 1px solid var(--glass-border);
+            }
+        }
+
+        @media (max-width: 440px) {
+            .header-logo {
+                max-width: 130px;
+            }
+            .header-logo img {
+                max-height: 40px !important;
+            }
+            
+            .header-button .loc-btn {
+                padding: 3px 6px;
+                font-size: 0.6rem;
+                min-width: 55px;
+            }
+            .header-button .location-toggle-wrap {
+                margin-right: 2px;
+            }
+            .th-header .container {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .th-menu-toggle {
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                font-size: 14px;
             }
         }
 
@@ -555,10 +595,6 @@
                 </ul>
             </div>
             <div class="mobile-toggles">
-                <div class="location-toggle-wrap">
-                    <button class="loc-btn active" data-loc="orange" title="Orange City">Orange City</button>
-                    <button class="loc-btn" data-loc="mtdora" title="Mt Dora">Mt Dora</button>
-                </div>
                 <button id="themeToggleBtnMobile" class="theme-toggle" aria-label="Toggle Dark Mode">
                     <i class="fas fa-moon"></i>
                 </button>
@@ -2486,34 +2522,33 @@
         </div>
     </div>
 
-    <!-- Terms and Conditions Modal -->
     <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" style="max-width: 80%; height: 50vh;">
-            <div class="modal-content" style="height: 100%; background: white;">
-                <div class="modal-header" style="border-bottom: 2px solid #21285a; background: #f8f9fa;">
+            <div class="modal-content" style="height: 100%;">
+                <div class="modal-header" style="border-bottom: 2px solid #21285a;">
                     <h3 class="modal-title" id="termsModalLabel" style="color: #21285a; font-weight: bold;">Terms & Conditions</h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body" style="padding: 30px; height: calc(100% - 120px); overflow-y: auto; background: white;">
-                    <div style="height: 100%; background: white;">
+                <div class="modal-body" style="padding: 30px; height: calc(100% - 120px); overflow-y: auto;">
+                    <div>
                         <h4 style="color: #21285a; margin-bottom: 20px;">Terms & Conditions - CareNow Pharmacy</h4>
                         
-                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                        <p style="margin-bottom: 15px; line-height: 1.6;">
                             By using our pharmacy services, you agree to comply with and be bound by the following terms and conditions. 
                             Please review these terms carefully before using our services.
                         </p>
 
                         <h5 style="color: #21285a; margin: 20px 0 10px 0;">1. SMS Consent Communication</h5>
-                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                        <p style="margin-bottom: 15px; line-height: 1.6;">
                             Information (Phone Numbers) obtained as part of the SMS consent process will not be shared with third parties for marketing purposes. 
                             SMS opt-in or phone numbers for the purpose of SMS are not being shared with any third party and affiliate company for marketing purposes.
                         </p>
 
-                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">2. Types of SMS Communications</h5>
-                        <p style="margin-bottom: 10px; line-height: 1.6; color: #333;">
+                        <h5 style="margin: 20px 0 10px 0; font-weight: bold;">2. Types of SMS Communications</h5>
+                        <p style="margin-bottom: 10px; line-height: 1.6; color: #fff;">
                             If consent has been given to receive text messages from CareNow Pharmacy, messages may be received related to the following:
                         </p>
-                        <ul style="margin-bottom: 15px; padding-left: 20px; color: #333;">
+                        <ul style="margin-bottom: 15px; padding-left: 20px;">
                             <li>Prescription ready notifications</li>
                             <li>Appointment reminders</li>
                             <li>Follow-up messages</li>
@@ -2521,87 +2556,87 @@
                             <li>Refill reminders</li>
                             <li>Health and wellness tips</li>
                         </ul>
-                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333; font-style: italic;">
+                        <p style="margin-bottom: 15px; line-height: 1.6; font-style: italic;">
                             Example: "Hello, this is a reminder that your prescription is ready for pickup at CareNow Pharmacy. Reply STOP to opt out of SMS messaging at any time."
                         </p>
 
-                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">3. Message Frequency</h5>
-                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                        <h5 style="margin: 20px 0 10px 0; font-weight: bold;">3. Message Frequency</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6;">
                             Message frequency may vary depending on the type of communication. You may receive up to 2 SMS messages per week regarding your prescriptions, appointments, or account status. 
                             Message frequency may vary based on your pharmacy activity and health needs.
                         </p>
 
-                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">4. Potential Fees for SMS Messaging</h5>
-                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                        <h5 style="margin: 20px 0 10px 0; font-weight: bold;">4. Potential Fees for SMS Messaging</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6;">
                             Standard message and data rates may apply, depending on the carrier's pricing plan. These fees may vary if the message is sent domestically or internationally. 
                             CareNow Pharmacy is not responsible for carrier charges.
                         </p>
 
-                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">5. Opt-In Method</h5>
-                        <p style="margin-bottom: 10px; line-height: 1.6; color: #333;">
+                        <h5 style="margin: 20px 0 10px 0; font-weight: bold;">5. Opt-In Method</h5>
+                        <p style="margin-bottom: 10px; line-height: 1.6;">
                             Opt-in to receive SMS messages from CareNow Pharmacy can be done in the following ways:
                         </p>
-                        <ul style="margin-bottom: 15px; padding-left: 20px; color: #333;">
+                        <ul style="margin-bottom: 15px; padding-left: 20px;">
                             <!-- <li>Verbally, during a conversation with our staff</li>
                             <li>By submitting an online form on our website</li>
                             <li>By filling out a paper form at our pharmacy location</li> -->
                             <li>By checking the SMS consent box on prescription forms</li>
                         </ul>
 
-                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">6. Opt-Out Method</h5>
-                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                        <h5 style="margin: 20px 0 10px 0; font-weight: bold;">6. Opt-Out Method</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6;">
                             Opting out of receiving SMS messages can be done at any time by replying "STOP" to any SMS message received. 
                             Alternatively, direct contact can be made to request removal from the messaging list by calling (386) 456-0055 or emailing Carenowpharmacy@gmail.com.
                             If SMS messages are not desired, the SMS consent box on forms can be left unchecked.
                         </p>
 
-                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">7. Help and Support</h5>
-                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                        <h5 style="margin: 20px 0 10px 0; font-weight: bold;">7. Help and Support</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6;">
                             For any issues with SMS messaging, reply with the keyword HELP to any message. 
                             Alternatively, help can be obtained directly from us at (386) 456-0055 or Carenowpharmacy@gmail.com.
                         </p>
 
-                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">8. Prescription Services & Requirements</h5>
-                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                        <h5 style="margin: 20px 0 10px 0; font-weight: bold;">8. Prescription Services & Requirements</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6;">
                             All prescriptions must be valid and from licensed healthcare providers. We reserve the right to verify prescriptions with prescribing physicians 
                             and may refuse to fill prescriptions that don't meet legal requirements. Controlled substances require additional verification and may have quantity limitations.
                         </p>
 
-                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">9. Privacy Policy & HIPAA Compliance</h5>
-                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                        <h5 style="margin: 20px 0 10px 0; font-weight: bold;">9. Privacy Policy & HIPAA Compliance</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6;">
                             We are committed to protecting your health information in accordance with HIPAA regulations. Your prescription and health information 
                             will be kept confidential and used only for legitimate healthcare purposes. Patient information will never be sold or shared for marketing purposes.
                         </p>
 
-                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">10. Payment Terms & Insurance</h5>
-                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                        <h5 style="margin: 20px 0 10px 0; font-weight: bold;">10. Payment Terms & Insurance</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6;">
                             Payment is due at the time of service unless other arrangements have been made. We accept most insurance plans and will work with you to maximize your benefits. 
                             Co-pays and deductibles are due at time of pickup. We also accept cash, credit cards, and HSA/FSA cards.
                         </p>
 
-                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">11. Refund & Return Policy</h5>
-                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                        <h5 style="margin: 20px 0 10px 0; font-weight: bold;">11. Refund & Return Policy</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6;">
                             Prescription medications cannot be returned once dispensed due to safety and regulatory requirements. 
                             Refunds may be considered for billing errors or insurance processing issues. Over-the-counter items may be returned within 30 days with receipt.
                         </p>
 
-                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">12. Standard Messaging Disclosures</h5>
-                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                        <h5 style="margin: 20px 0 10px 0; font-weight: bold;">12. Standard Messaging Disclosures</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6;">
                             Message and data rates may apply. Opt out at any time by texting "STOP." 
                             For assistance, text "HELP" or visit our Terms and Conditions and Privacy Policy pages. Message frequency may vary.
                         </p>
 
-                        <h5 style="color: #21285a; margin: 20px 0 10px 0;">13. Limitation of Liability</h5>
-                        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+                        <h5 style="margin: 20px 0 10px 0; font-weight: bold;">13. Limitation of Liability</h5>
+                        <p style="margin-bottom: 15px; line-height: 1.6;">
                             CareNow Pharmacy's liability is limited to the cost of the medication or service provided. We are not responsible for adverse drug reactions 
                             when medications are used as prescribed, delays in delivery due to weather or circumstances beyond our control, or technical issues with SMS services.
                         </p>
 
-                        <div style="margin-top: 25px; padding: 15px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #21285a;">
-                            <p style="margin-bottom: 10px; font-weight: bold; color: #21285a;">Quick Contact:</p>
-                            <p style="margin: 5px 0; color: #333;">Phone: (386) 456-0055</p>
-                            <p style="margin: 5px 0; color: #333;">Email: Carenowpharmacy@gmail.com</p>
-                            <p style="margin: 5px 0; color: #333;">Address: 1039 Harley Strickland Blvd STE 600, Orange City, FL 32763</p>
+                        <div style="margin-top: 25px; padding: 15px; border-radius: 8px; border-left: 4px solid #21285a; background: var(--surface-color);">
+                            <p style="margin-bottom: 10px; font-weight: bold; color: #3b8a34;">Quick Contact:</p>
+                            <p style="margin: 5px 0;">Phone: (386) 456-0055</p>
+                            <p style="margin: 5px 0;">Email: Carenowpharmacy@gmail.com</p>
+                            <p style="margin: 5px 0;">Address: 1039 Harley Strickland Blvd STE 600, Orange City, FL 32763</p>
                         </div>
 
                         <p style="margin-top: 20px; font-style: italic; color: #666; font-size: 0.9em; text-align: center;">
