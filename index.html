@@ -541,6 +541,95 @@
             }
         }
 
+        /* 3-Bar Mobile Header Styling */
+        .mobile-info-bar {
+            background: #ffffff;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            transition: var(--transition-smooth);
+        }
+
+        .mobile-info-link {
+            font-size: 0.75rem;
+            color: #21285a;
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .mobile-info-link i {
+            color: var(--primary-vibrant);
+            margin-right: 5px;
+        }
+
+        .mobile-location-bar {
+            background: #ffffff;
+            border-top: 1px solid rgba(0,0,0,0.05);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            transition: var(--transition-smooth);
+        }
+
+        [data-theme="dark"] .mobile-info-bar,
+        [data-theme="dark"] .mobile-location-bar {
+            background: var(--bg-color);
+            border-color: rgba(255,255,255,0.1);
+        }
+
+        [data-theme="dark"] .mobile-info-link {
+            color: #f8fafc;
+        }
+
+        @media (max-width: 991px) {
+            .th-header {
+                position: relative;
+                z-index: 1001;
+            }
+
+            .menu-area {
+                padding: 10px 0;
+            }
+
+            .header-logo {
+                max-width: 150px;
+            }
+
+            .header-button {
+                gap: 12px;
+            }
+
+            .theme-toggle {
+                width: 38px;
+                height: 38px;
+                font-size: 1rem;
+                margin-right: 0;
+                display: inline-flex !important; /* Show theme toggle on mobile bar 2 */
+            }
+
+            .mobile-location-bar .location-toggle-wrap {
+                margin-right: 0;
+                width: 100%;
+                display: flex;
+                background: var(--surface-color);
+                border-radius: 12px;
+                padding: 5px;
+            }
+
+            .mobile-location-bar .loc-btn {
+                flex: 1;
+                padding: 8px;
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 440px) {
+            .header-logo {
+                max-width: 130px;
+            }
+            .mobile-info-link {
+                font-size: 0.7rem;
+            }
+        }
+
         /* Images and Carousel */
         .imgCar img, .carousel-slide img, .img-box1 img {
             border-radius: 30px;
@@ -606,15 +695,29 @@
 
     <!-- Header Area -->
     <header class="th-header header-layout1" id="home">
-        <div class="header-top">
+        <!-- Mobile Info Bar (Bar 1) -->
+        <div class="mobile-info-bar d-lg-none">
+            <div class="container py-2">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="tel:+13864560055" class="mobile-info-link">
+                        <i class="fas fa-phone me-2"></i> +1 (386) 456-0055
+                    </a>
+                    <a href="https://www.google.com/maps/dir//1039+Harley+Strickland+Blvd+STE+600,+Orange+City,+FL+32763" class="mobile-info-link">
+                        <i class="fas fa-location-dot me-2"></i> Orange City, FL
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-top d-none d-lg-block">
             <div class="container">
                 <div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
-                    <div class="col-auto d-none d-lg-block">
+                    <div class="col-auto">
                         <div class="header-links">
                             <ul>
-                                <li class="d-none d-sm-inline-block"><i class="fas fa-phone icon-btn"></i><b>Phone:</b> <a href="tel:+13864560055">+1 (386) 456-0055</a></li>
-                                <li class="d-none d-sm-inline-block"><i class="fas fa-envelope icon-btn"></i><b>Email:</b> <a href="mailto:Carenowpharmacy@gmail.com">Carenowpharmacy@gmail.com</a></li>
-                                <li class="d-none d-sm-inline-block"><i class="fas fa-location-dot icon-btn"></i><a href="https://www.google.com/maps/dir//1039+Harley+Strickland+Blvd+STE+600,+Orange+City,+FL+32763"> 1039 Harley Strickland Blvd STE 600, Orange City, FL 32763</a></li>
+                                <li><i class="fas fa-phone icon-btn"></i><b>Phone:</b> <a href="tel:+13864560055">+1 (386) 456-0055</a></li>
+                                <li><i class="fas fa-envelope icon-btn"></i><b>Email:</b> <a href="mailto:Carenowpharmacy@gmail.com">Carenowpharmacy@gmail.com</a></li>
+                                <li><i class="fas fa-location-dot icon-btn"></i><a href="https://www.google.com/maps/dir//1039+Harley+Strickland+Blvd+STE+600,+Orange+City,+FL+32763"> 1039 Harley Strickland Blvd STE 600, Orange City, FL 32763</a></li>
                             </ul>
                         </div>
                     </div>
@@ -645,7 +748,7 @@
                         </div>
                         <div class="col-auto">
                             <div class="header-button">
-                                <div class="location-toggle-wrap">
+                                <div class="location-toggle-wrap d-none d-lg-inline-flex">
                                     <button class="loc-btn active" data-loc="orange" title="Orange City">Orange City</button>
                                     <button class="loc-btn" data-loc="mtdora" title="Mt Dora">Mt Dora</button>
                                 </div>
@@ -656,6 +759,16 @@
                                 <button type="button" class="th-menu-toggle d-block d-lg-none"><i class="far fa-bars"></i></button>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Location Bar (Bar 3) -->
+            <div class="mobile-location-bar d-lg-none">
+                <div class="container text-center py-2">
+                    <div class="location-toggle-wrap justify-content-center">
+                        <button class="loc-btn active" data-loc="orange" title="Orange City">Orange City</button>
+                        <button class="loc-btn" data-loc="mtdora" title="Mt Dora">Mt Dora</button>
                     </div>
                 </div>
             </div>
@@ -2825,8 +2938,20 @@
                 const data = locations[locKey];
                 localStorage.setItem('carenow_location', locKey);
 
+                // Update New Mobile Bar Links
+                const mobPhone = document.querySelector('.mobile-info-bar a[href^="tel:"]');
+                const mobLoc = document.querySelector('.mobile-info-bar a[href*="maps"]');
+                if (mobPhone) {
+                    mobPhone.href = data.phoneLink;
+                    mobPhone.innerHTML = `<i class="fas fa-phone me-2"></i> ${data.phone}`;
+                }
+                if (mobLoc) {
+                    mobLoc.href = data.maps;
+                    mobLoc.innerHTML = `<i class="fas fa-location-dot me-2"></i> ${locKey === 'orange' ? 'Orange City, FL' : 'Mt Dora, FL'}`;
+                }
+
                 // Update UI Buttons
-                locBtns.forEach(btn => {
+                document.querySelectorAll('.loc-btn').forEach(btn => {
                     btn.classList.toggle('active', btn.dataset.loc === locKey);
                 });
 
