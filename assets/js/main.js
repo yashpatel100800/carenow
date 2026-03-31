@@ -132,7 +132,7 @@
     /*---------- 04. Sticky fix ----------*/
     $(window).scroll(function () {
         var topPos = $(this).scrollTop();
-        if (topPos > 500) {
+        if (topPos > 150) {
             $('.sticky-wrapper').addClass('sticky');
             $('.sticky-wrapper').css({
                 'background-color': '#1F295C',
