@@ -754,8 +754,8 @@ textarea.is-invalid {
   background-color: var(--smoke-color2);
 }
 
-.th-menu-wrapper .mobile-logo svg {
-  max-width: 185px;
+.th-menu-wrapper .mobile-logo img {
+  max-width: 200px;
 }
 
 .th-menu-wrapper .th-menu-toggle {
